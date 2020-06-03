@@ -22,4 +22,8 @@ class CookBookTest < Minitest::Test
 
     assert_equal [@recipe1, @recipe2], @cookbook.recipes
   end
+
+  def test_it_can_find_cookbook_ingredients
+    assert_equal ["Cheese", "Macaroni", "Ground Beef", "Bun"], @cookbook.ingredients
+  end
 end

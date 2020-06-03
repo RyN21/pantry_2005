@@ -34,6 +34,6 @@ class RecipeTest < Minitest::Test
   end
 
   def test_it_can_find_total_calories
-    assert_equal 440, @recipe2.total_calories
+    assert_equal 675, @recipe2.total_calories
   end
 end
