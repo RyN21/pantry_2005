@@ -13,6 +13,8 @@ class Pantry
     @stock[ingredient] += count
   end
 
-  
+  def enough_ingredients_for?(recipe)
+    recipe.ingredients.count < @stock[recipe.ingredients]
+  end
 
 end
