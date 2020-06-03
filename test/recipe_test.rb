@@ -12,8 +12,8 @@ class RecipeTest < Minitest::Test
     @ingredient4 = Ingredient.new({name: "Bun", unit: "g", calories: 75})
     @recipe1 = Recipe.new("Mac and Cheese")
     @recipe1.add_ingredient(@ingredient1, 2)
-    @recipe1.add_ingredient(@ingredient1, 4)
     @recipe1.add_ingredient(@ingredient2, 8)
+    @recipe1.add_ingredient(@ingredient1, 4)
     @recipe2 = Recipe.new("Cheese Burger")
     @recipe2.add_ingredient(@ingredient1, 2)
     @recipe2.add_ingredient(@ingredient3, 4)
@@ -34,6 +34,8 @@ class RecipeTest < Minitest::Test
   end
 
   def test_it_can_find_total_calories
-    assert_equal 675, @recipe2.total_calories
+    assert_equal 675, @recipe1.total_calories
   end
+
+
 end

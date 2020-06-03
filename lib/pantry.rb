@@ -13,4 +13,6 @@ class Pantry
     @stock[ingredient] += count
   end
 
+  
+
 end

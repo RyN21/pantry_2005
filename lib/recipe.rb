@@ -19,6 +19,4 @@ class Recipe
       ingredient.calories * count
     end
   end
-
-
 end
