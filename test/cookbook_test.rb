@@ -1,6 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/pride'
-require './lib/cookbook'
+require './lib/cook_book'
 require './lib/recipe'
 require './lib/ingredient'
 
